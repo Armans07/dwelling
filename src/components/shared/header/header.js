@@ -14,6 +14,8 @@ const bodoni = Libre_Bodoni({
 
 const HeaderComponent = ({ children }) => {
   const { showScheduleBar } = userAppStore();
+  const api = process.env.NEXT_PUBLIC_apiKey
+  console.log(api)
   return (
     <div className="sticky top-0 z-30 w-full shadow-sm">
       <header
